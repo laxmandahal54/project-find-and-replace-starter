@@ -34,9 +34,9 @@ replaceAllButton.addEventListener("click", function () {
     for (let j = 0; j < cells.length; j++) {
       console.log(cells[j].innerHTML);
       cells[j].innerHTML.includes(findvalue);
-      if (cells.innerHTML.includes(findvalue)) {
-        var newItem = newCells.innerHTML.replace(findValue.replaceValue);
-        newCells.innerHTML = newItem;
+      if (cells[j].innerHTML.includes(findvalue)) {
+        var newItem = cells[j].innerHTML.replace(findvalue, replacevalue);
+        cells[j].innerHTML = newItem;
       }
     }
   }
